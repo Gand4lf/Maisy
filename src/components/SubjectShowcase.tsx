@@ -24,7 +24,7 @@ const subjects = [
         id: 3,
         name: 'Mathematics',
         icon: '🔢',
-        description: "You're finally getting this!!!!!! D:<.",
+        description: "You&apos;re finally getting this!!!!!! D:<.",
         gradientClass: 'card-gradient-3'
     },
     {
@@ -60,7 +60,7 @@ export default function SubjectShowcase() {
                 <span className="bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">Your GCSE Journey</span>
             </h2>
 
-            <p className="mb-8 text-center">
+            <p className="mb-8 text-black text-center">
                 Congratulations on picking these subjects! Each one will open new doors for your future.
             </p>
 

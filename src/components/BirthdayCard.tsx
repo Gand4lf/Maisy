@@ -43,8 +43,8 @@ export default function BirthdayCard() {
                             Congratulations on picking your GCSEs and becoming an amazing photographer!
                         </p>
                         <p className="mt-4 text-sm text-purple-700">
-                            I'm so proud of how your confidence has grown.
-                            Can't wait to see what amazing things you'll do this year!
+                            I&apos;m so proud of how your confidence has grown.
+                            Can&apos;t wait to see what amazing things you&apos;ll do this year!
                         </p>
                     </motion.div>
 

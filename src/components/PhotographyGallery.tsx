@@ -101,8 +101,8 @@ export default function PhotographyGallery() {
                 ))}
             </motion.div>
 
-            <p className="text-center mt-8 text-sm opacity-80">
-                You're becoming such an amazing photographer! Drag the photos around to rearrange your gallery!
+            <p className="text-center mt-8 text-sm opacity-80 text-primary">
+                You&apos;re becoming such an amazing photographer! Drag the photos around to rearrange your gallery!
             </p>
         </div>
     );

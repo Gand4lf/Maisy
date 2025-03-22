@@ -64,15 +64,15 @@ export default function ConfidenceMeter() {
 
             <motion.p
                 variants={itemVariants}
-                className="mb-8 text-center"
+                className="mb-8 text-black text-center"
             >
-                I've seen your confidence growing so much this year! Here's a celebration of that amazing progress:
+                I&apos;ve seen your confidence growing so much this year! Here&apos;s a celebration of that amazing progress:
             </motion.p>
 
             <div className="space-y-6">
                 <motion.div variants={itemVariants}>
                     <div className="flex justify-between mb-2">
-                        <span className="font-semibold">Confidence Level</span>
+                        <span className="font-semibold text-black">Confidence Level</span>
                         <span className="text-primary font-bold">85%</span>
                     </div>
                     <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
@@ -92,7 +92,7 @@ export default function ConfidenceMeter() {
                     <ul className="space-y-3">
                         <li className="flex items-start">
                             <span className="text-accent text-xl mr-2">✓</span>
-                            <span>Choosing your own GCSE subjects that you're passionate about</span>
+                            <span>Choosing your own GCSE subjects that you&apos;re passionate about</span>
                         </li>
                         <li className="flex items-start">
                             <span className="text-secondary text-xl mr-2">✓</span>
@@ -104,7 +104,7 @@ export default function ConfidenceMeter() {
                         </li>
                         <li className="flex items-start">
                             <span className="text-primary text-xl mr-2">✓</span>
-                            <span>Taking on new challenges and pursuing your interests</span>
+                            <span>You&apos;re taking on new challenges and pursuing your interests</span>
                         </li>
                     </ul>
                 </motion.div>
