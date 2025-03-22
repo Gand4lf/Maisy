@@ -28,7 +28,7 @@ export default function BirthdayCard() {
                         transition={{ delay: 0.3 }}
                         className="text-3xl font-bold text-center"
                     >
-                        <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-pink-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent">
                             Happy 14th<br />Birthday!
                         </span>
                     </motion.div>
@@ -39,10 +39,10 @@ export default function BirthdayCard() {
                         transition={{ delay: 0.6 }}
                         className="px-8 text-center text-md mt-2"
                     >
-                        <p className="text-indigo-600 font-medium">
+                        <p className="text-indigo-700 font-medium">
                             Congratulations on picking your GCSEs and becoming an amazing photographer!
                         </p>
-                        <p className="mt-4 text-sm text-purple-500">
+                        <p className="mt-4 text-sm text-purple-700">
                             I'm so proud of how your confidence has grown.
                             Can't wait to see what amazing things you'll do this year!
                         </p>
@@ -54,14 +54,14 @@ export default function BirthdayCard() {
                         transition={{ delay: 0.9 }}
                         className="mt-auto mb-4 text-sm"
                     >
-                        <span className="bg-gradient-to-r from-cyan-400 to-fuchsia-500 bg-clip-text text-transparent font-medium">
+                        <span className="bg-gradient-to-r from-cyan-600 to-fuchsia-600 bg-clip-text text-transparent font-medium">
                             With lots of love from your brother 💖
                         </span>
                     </motion.div>
 
-                    <SparklesIcon className="w-6 h-6 text-yellow-400 absolute top-20 right-10 sparkle" />
-                    <SparklesIcon className="w-4 h-4 text-cyan-400 absolute top-40 left-10 sparkle delay-1" />
-                    <SparklesIcon className="w-5 h-5 text-purple-400 absolute bottom-40 right-20 sparkle delay-2" />
+                    <SparklesIcon className="w-6 h-6 text-yellow-500 absolute top-20 right-10 sparkle" />
+                    <SparklesIcon className="w-4 h-4 text-cyan-600 absolute top-40 left-10 sparkle delay-1" />
+                    <SparklesIcon className="w-5 h-5 text-purple-600 absolute bottom-40 right-20 sparkle delay-2" />
                 </motion.div>
             </motion.div>
         </div>
