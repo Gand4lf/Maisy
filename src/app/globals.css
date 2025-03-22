@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f9f7ff;
+  --foreground: #323248;
+  --primary: #ff6b9d;
+  --secondary: #6a8cff;
+  --accent: #ffcb66;
+  --tertiary: #9d85ff;
+  --success: #66d4a0;
+  --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-tertiary: var(--tertiary);
+  --color-success: var(--success);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2a2a40;
+    --foreground: #f5f5ff;
+    --primary: #ff8cb3;
+    --secondary: #94a6ff;
+    --accent: #ffe09c;
+    --tertiary: #b79dff;
+    --success: #85e6b8;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
+  overflow-x: hidden;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.8);
+  }
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+.delay-3 {
+  animation-delay: 1.5s;
+}
+
+/* For the polaroid photo effect */
+.polaroid {
+  background: white;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom gradient backgrounds */
+.card-gradient-1 {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.card-gradient-2 {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--tertiary) 100%);
+}
+
+.card-gradient-3 {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+}
+
+.card-gradient-4 {
+  background: linear-gradient(135deg, var(--tertiary) 0%, var(--success) 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
